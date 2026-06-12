@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест: Компьютерные сети (Таненбаум, 6-е изд.)</title>
+
+    <!-- Главный файл стилей (импортирует все модули из папки styles/) -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Подключение шрифтов (Inter + JetBrains Mono). Если шрифты недоступны,
+         браузер использует системные fallback, заданные в base.css -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Декоративный фон (сетка + градиентные сферы).
+         Все элементы скрыты от скринридеров, так как не несут смысловой нагрузки. -->
+    <div class="cyber-grid" aria-hidden="true"></div>
+    <div class="gradient-orb gradient-orb--1" aria-hidden="true"></div>
+    <div class="gradient-orb gradient-orb--2" aria-hidden="true"></div>
+    <div class="gradient-orb gradient-orb--3" aria-hidden="true"></div>
+
+    <!-- Основной контейнер приложения.
+         aria-live="polite" сообщает скринридерам об изменениях внутри (например, новый вопрос). -->
+    <main id="app" aria-live="polite"></main>
+
+    <!-- Данные вопросов (массив QUESTIONS) -->
+    <script src="questions.js"></script>
+    <!-- Логика теста (класс QuizApp) -->
+    <script src="quiz.js"></script>
+</body>
+
+</html>

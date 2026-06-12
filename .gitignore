@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Временные файлы
+*.tmp
+*.log
+
+# Системные файлы Windows
+Thumbs.db
+Desktop.ini
